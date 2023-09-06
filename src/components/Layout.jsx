@@ -20,10 +20,6 @@ function Layout() {
                         to="/clientes/nuevo">
                         Nuevo Cliente
                     </Link>
-                    <NavLink
-                        className={ ({isActive}) => isActive ? 'text-blue-300': 'text-white' }>
-                        Nuevo Cliente
-                    </NavLink>
                 </nav>
                         
             </aside>
