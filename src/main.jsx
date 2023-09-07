@@ -22,7 +22,7 @@ const router = createBrowserRouter([
       },
       // Define una page especifica
       {
-        path: '/clientes/nuevo',
+        path: '/clientes/nuevo', 
         element: <NuevoCliente />
       }
     ]
