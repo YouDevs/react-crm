@@ -1,6 +1,12 @@
 // Hook para poder navegar entre páginas:
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Form } from "react-router-dom"
 import Formulario from '../components/Formulario'
+
+// El action del Form
+export function action() {
+    console.log("enviando form.....")
+    return 0
+}
 
 function NuevoCliente() {
 
@@ -14,20 +20,22 @@ function NuevoCliente() {
                 <button
                     className="bg-blue-800 text-white px-3 py-1 font-bold uppercase"
                     onClick={ () => navigate(-1) }
-                    // onClick={ () => navigate('/) }
                 >
                     Volver
                 </button>
             </div>
             <div className="bg-white shadow rounded-md md:w-3/4 mx-auto px-5 py-10">
-                <form>
+                <Form
+                    method="POST"
+
+                >
                     <Formulario />
                     <input
                         type="submit"
                         className="mt-5 bg-blue-800 p-3 uppercase font-bold text-white text-lg"
                         value="Registrar Cliente"
                     />
-                </form>
+                </Form>
             </div>
         </>
     )
